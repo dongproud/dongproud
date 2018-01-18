@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>查询</title>
+</head>
+<body>
+<form action="index_submit" method="get" accept-charset="utf-8">
+	<table width="40%" align="center">
+			<tr>
+				<td>姓名</td>
+				<td>性别</td>
+		
+			</tr>
+			{foreach item="vo" name="list"}
+			<tr>
+				<td>{$vo.username}</td>
+				<td>{$vo.telphone}</td>
+			
+			</tr>
+			{/foreach}
+
+	</table>
+	{$page}
+	<!-- conf 分页配置 -->
+
+</form>
+</body>
+</html>
